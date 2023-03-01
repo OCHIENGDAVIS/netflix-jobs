@@ -6,8 +6,12 @@ export default function Navigation() {
 	return (
 		<header className={classes.header}>
 			<div className={classes.logo}>
-				<h1>Netflix </h1>
-				<span>Jobs</span>
+				<Link href="/">
+					<h1>Netflix </h1>
+				</Link>
+				<Link href="/">
+					<span>Jobs</span>
+				</Link>
 			</div>
 			<nav className={classes.nav}>
 				<ul className={classes.items}>

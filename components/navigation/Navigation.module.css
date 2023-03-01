@@ -3,6 +3,7 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 2rem 6rem;
+	/* background-color: var(--color-dark); */
 }
 .logo {
 	display: flex;
@@ -13,7 +14,7 @@
 	color: var(--color-primary);
 }
 .logo span {
-	font-weight: bold;
+	font-weight: 700;
 	color: var(--color-white);
 }
 .nav {

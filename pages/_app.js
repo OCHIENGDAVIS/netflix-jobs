@@ -2,12 +2,13 @@ import { Fragment } from 'react';
 import Head from 'next/head';
 
 import Layout from '@/components/layout/Layout';
+import Hero from '@/components/hero/Hero';
 
 import '@/styles/globals.css';
 
 export default function App({ Component, pageProps }) {
 	return (
-		<Layout>
+		<Fragment>
 			<Head>
 				<title>Netflix Jobs Website Clone</title>
 				<meta name="description" content="netflix jobs website" />
@@ -19,6 +20,6 @@ export default function App({ Component, pageProps }) {
 			</Head>
 
 			<Component {...pageProps} />
-		</Layout>
+		</Fragment>
 	);
 }

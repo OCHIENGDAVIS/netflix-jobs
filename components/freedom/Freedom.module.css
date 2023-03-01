@@ -1,0 +1,57 @@
+.freedom {
+	display: flex;
+	/* gap: 1rem; */
+	margin: 3.5rem 0;
+	padding: 0 12rem;
+	position: relative;
+}
+/* ! TODO BOX SHADOW IMPLEMENTATION */
+/* .freedom::before {
+	content: '';
+	width: 4rem;
+	height: 1rem;
+	background-color: var(--color-primary);
+	box-shadow: 0 0 40px 5px rgb(0 0 0 / 80%);
+	border-radius: 60%; */
+/* background: transparent;
+	position: absolute;
+	left: 0;
+	top: 0; */
+/* } */
+.info {
+	background-color: var(--color-white);
+	min-height: 22rem;
+	padding: 4rem;
+	/* box-shadow: 0 0 40px 5px rgb(0 0 0 / 80%); */
+}
+.info h2 {
+	font-weight: 900;
+	font-size: 1.95rem;
+	padding-bottom: 1rem;
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	background-color: var(--color-primary);
+	color: var(--color-white);
+	border: none;
+	padding: 0.625rem 1rem;
+	font-size: 0.8rem;
+	margin-top: 1rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	cursor: pointer;
+}
+.btn:hover span > svg {
+	padding-left: 0.25rem;
+}
+
+.icon {
+	width: 1rem;
+	height: 1rem;
+}
+.image {
+	background-color: var(--color-white);
+	border-left: 2rem solid var(--color-primary-light-1);
+}
