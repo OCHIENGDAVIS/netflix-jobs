@@ -1,0 +1,10 @@
+.latest {
+	padding: 0 4rem;
+	margin-bottom: 8rem;
+}
+.latest h3 {
+	text-align: center;
+	margin-bottom: 1.5rem;
+	font-weight: 900;
+	font-size: 1.5rem;
+}
