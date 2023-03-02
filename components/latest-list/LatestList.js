@@ -7,9 +7,6 @@ export default function LatestList({ videos }) {
 			{videos.map((video) => {
 				return <LatestItem key={video.videoUrl} video={video} />;
 			})}
-			{/* <LatestItem />
-			<LatestItem />
-			<LatestItem /> */}
 		</div>
 	);
 }
