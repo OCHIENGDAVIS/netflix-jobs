@@ -4,19 +4,22 @@ import classes from './BlogItem.module.css';
 
 export default function BlogItem({ blog }) {
 	return (
-		<div className={classes.item}>
+		<div className={`${classes.item} shadow`}>
 			<span className={classes.tag}>{blog.tag}</span>
 			<h3 className={classes.title}>{blog.title}</h3>
 			<p className={classes.by}>{blog.by && <span>By {blog.by}</span>}</p>
 			{blog.imageUrl && (
-				<Image
-					alt={blog.title}
-					src={blog.imageUrl}
-					width={400}
-					height={250}
-					quality={100}
-					style={{ objectFit: 'cover' }}
-				/>
+				<div>
+					<Image
+						alt={blog.title}
+						src={blog.imageUrl}
+						width={400}
+						height={250}
+						quality={100}
+						style={{ objectFit: 'cover' }}
+						layout="responsive"
+					/>
+				</div>
 			)}
 
 			<button className={classes.action}>

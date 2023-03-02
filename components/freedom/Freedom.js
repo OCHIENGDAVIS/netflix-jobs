@@ -5,7 +5,7 @@ import classes from './Freedom.module.css';
 export default function Freedom() {
 	return (
 		<section className={classes.freedom}>
-			<div className={classes.info}>
+			<div className={`${classes.info} shadow`}>
 				<h2 className={classes.title}>Freedom and Responsibility</h2>
 				<p className={classes.text}>
 					Our core philosophy is people over process. Our culture has
@@ -33,7 +33,7 @@ export default function Freedom() {
 					</span>
 				</button>
 			</div>
-			<div className={classes.image}>
+			<div className={`${classes.info} shadow`}>
 				<Image
 					src="/images/site/freedom.jpg"
 					alt="image of three people enjoying work flexibility"

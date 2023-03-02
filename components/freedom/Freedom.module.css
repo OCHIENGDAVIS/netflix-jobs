@@ -5,19 +5,7 @@
 	padding: 0 12rem;
 	position: relative;
 }
-/* ! TODO BOX SHADOW IMPLEMENTATION */
-/* .freedom::before {
-	content: '';
-	width: 4rem;
-	height: 1rem;
-	background-color: var(--color-primary);
-	box-shadow: 0 0 40px 5px rgb(0 0 0 / 80%);
-	border-radius: 60%; */
-/* background: transparent;
-	position: absolute;
-	left: 0;
-	top: 0; */
-/* } */
+
 .info {
 	background-color: var(--color-white);
 	min-height: 22rem;

@@ -7,7 +7,7 @@ import classes from './Hero.module.css';
 
 export default function Hero() {
 	return (
-		<section className={classes.hero}>
+		<section className={`${classes.hero} shadow`}>
 			<Navigation />
 			<div className={classes.info}>
 				<h1>

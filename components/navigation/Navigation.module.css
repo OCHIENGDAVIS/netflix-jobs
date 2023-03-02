@@ -22,6 +22,9 @@
 	align-items: center;
 	gap: 1.25rem;
 }
+.nav a {
+	color: var(--color-white);
+}
 .items {
 	display: flex;
 	align-items: center;

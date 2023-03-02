@@ -7,7 +7,7 @@ export default function LatestItem({ video }) {
 		backgroundImage: `url(${video.thumbnailUrl})`,
 	};
 	return (
-		<div className={classes.item} style={divStyle}>
+		<div className={`${classes.item} shadow`} style={divStyle}>
 			<Image
 				src={video.thumbnailUrl}
 				alt={video.title}

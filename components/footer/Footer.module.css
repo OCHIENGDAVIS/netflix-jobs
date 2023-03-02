@@ -1,0 +1,67 @@
+.footer {
+	background-color: var(--color-white);
+	height: 8rem;
+	padding: 2rem 6rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.logo h1 {
+	color: var(--color-primary);
+}
+.logo span {
+	font-weight: 700;
+	color: var(--color-dark);
+}
+
+.icons {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+.icons strong {
+	color: var(--color-primary);
+}
+.icons span:not(.text) {
+	background-color: var(--color-dark);
+	width: 2rem;
+	height: 2rem;
+	padding: 0.65rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.icons span:not(.text):hover {
+	transform: scale(1.05);
+}
+.text {
+	font-size: 0.95rem;
+	font-weight: 600;
+}
+.nav {
+	display: flex;
+	gap: 1rem;
+	font-size: 0.75rem;
+}
+
+.nav a:not(:first-child) {
+	color: var(--color-gray-1);
+}
+
+.nav a:hover {
+	color: var(--color-gray-1);
+}
+.follow {
+	display: flex;
+}
+.emphasize {
+	color: var(--color-dark);
+	font-weight: 700;
+}
