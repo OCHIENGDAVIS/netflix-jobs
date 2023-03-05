@@ -1,14 +1,29 @@
 import { Fragment } from 'react';
 
 import Navigation from '@/components/navigation/Navigation';
+import Landing from '@/components/landing/Landing';
+import DreamTeam from '@/components/dream-team/DreaTeam';
+import { getAllTeams } from '@/data/teams';
 
-export default function Teams() {
+import classes from '@/styles/Teams.module.css';
+
+export default function Teams({ teams }) {
 	return (
-		<Fragment>
-			<Navigation />
-			<div>
-				<h3>Teams</h3>
+		<section className={classes.teams}>
+			<div className={classes.header}>
+				<Navigation />
 			</div>
-		</Fragment>
+			<Landing />
+			<DreamTeam teams={teams} />
+		</section>
 	);
+}
+
+export async function getStaticProps() {
+	const teams = getAllTeams();
+	return {
+		props: {
+			teams,
+		},
+	};
 }

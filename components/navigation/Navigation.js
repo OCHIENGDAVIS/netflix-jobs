@@ -1,10 +1,12 @@
+import { useState, useEffect, useRef } from 'react';
+
 import Link from 'next/link';
 
 import classes from './Navigation.module.css';
 
 export default function Navigation() {
 	return (
-		<header className={classes.header}>
+		<header id="header" className={classes.header}>
 			<div className={classes.logo}>
 				<Link href="/">
 					<h1>Netflix </h1>

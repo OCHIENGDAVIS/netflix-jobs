@@ -15,7 +15,7 @@ export default function Hero() {
 					problems.
 				</h1>
 			</div>
-			<div className={classes.search}>
+			<div className={classes.search} id="search">
 				<input
 					type="text"
 					placeholder="Search Jobs by Keyword"

@@ -1,0 +1,29 @@
+.card {
+	min-width: 33.3%;
+	text-align: center;
+	/* border: 1px solid red; */
+	padding: 2rem 0;
+}
+.card h2 {
+	font-size: 1.25rem;
+	margin-top: 0.75rem;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.list li {
+	list-style: none;
+	align-items: center;
+	justify-content: center;
+}
+.list a {
+	color: var(--color-dark);
+	font-size: 0.95rem;
+	transition: calor 0.2s ease-in-out;
+}
+.list a:hover {
+	color: var(--color-primary);
+}

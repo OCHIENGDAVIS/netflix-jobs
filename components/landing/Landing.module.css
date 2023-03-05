@@ -1,0 +1,19 @@
+.landing {
+	display: flex;
+	align-items: center;
+	height: 21rem;
+	margin-bottom: 3rem;
+	margin-top: -11rem;
+	padding: 0 8rem;
+}
+.landing__img1 {
+	position: relative;
+	height: 100%;
+	width: 70%;
+	border-right: 1.75rem solid var(--color-primary);
+}
+.landing__img2 {
+	position: relative;
+	width: 30%;
+	height: 100%;
+}

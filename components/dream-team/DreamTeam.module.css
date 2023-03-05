@@ -1,0 +1,17 @@
+.teams {
+	padding: 0 12rem;
+	margin-bottom: 4rem;
+}
+.container {
+	background-color: var(--color-white);
+	margin-top: -6.5rem;
+	position: relative;
+	z-index: 999;
+	padding: 2.5rem 4.5rem;
+	padding-bottom: 4rem;
+}
+.teams h1 {
+	font-size: 2rem;
+	font-weight: 900;
+	margin-bottom: 6rem;
+}
