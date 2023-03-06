@@ -76,6 +76,24 @@ const teams = [
 		],
 	},
 ];
+const pageTitles = {
+	teams: 'Join Your Dream Team',
+	location: 'Locations Across the Globe',
+	newGrads: 'New Grad Program',
+	intern: 'Intern Program',
+};
+const landingImages = {
+	image1: '/images/site/landing1.jpeg',
+	image2: '/images/site/landing2.jpeg',
+};
+
+export function getTeamsLandingImages() {
+	return landingImages;
+}
+
+export function getPageTitles() {
+	return pageTitles;
+}
 
 export function getAllTeams() {
 	return teams;

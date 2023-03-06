@@ -4,12 +4,13 @@ import Navigation from '../navigation/Navigation';
 
 import classes from './Landing.module.css';
 
-export default function Landing() {
+export default function Landing({ images }) {
+	const { image1, image2 } = images;
 	return (
 		<div className={classes.landing}>
 			<div className={classes.landing__img1}>
 				<Image
-					src="/images/site/landing1.jpeg"
+					src={image1}
 					fill
 					alt="image of employees charting in the office"
 					style={{ objectFit: 'cover' }}
@@ -17,7 +18,7 @@ export default function Landing() {
 			</div>
 			<div className={classes.landing__img2}>
 				<Image
-					src="/images/site/landing2.jpeg"
+					src={image2}
 					fill
 					alt="image of netflix films"
 					style={{ objectFit: 'cover' }}

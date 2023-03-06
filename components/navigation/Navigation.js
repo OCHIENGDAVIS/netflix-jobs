@@ -21,7 +21,7 @@ export default function Navigation() {
 						<Link href="/teams">Teams</Link>
 					</li>
 					<li>
-						<Link href="/teams">Location</Link>
+						<Link href="/location">Location</Link>
 					</li>
 					<li>
 						<Link href="/teams">Emerging Talent</Link>

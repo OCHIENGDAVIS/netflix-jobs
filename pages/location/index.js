@@ -1,23 +1,19 @@
-import { Fragment } from 'react';
-
 import Navigation from '@/components/navigation/Navigation';
 import Landing from '@/components/landing/Landing';
 import DreamTeam from '@/components/dream-team/DreaTeam';
-import {
-	getAllTeams,
-	getPageTitles,
-	getTeamsLandingImages,
-} from '@/data/teams';
 
-import classes from '@/styles/Teams.module.css';
+import { getAllTeams, getPageTitles } from '@/data/teams';
+import { getLocationLandingImages } from '@/data/location';
 
-export default function Teams({ teams, pageTitles, teamsLandingImages }) {
+import classes from '@/styles/Location.module.css';
+
+export default function Location({ teams, pageTitles, images }) {
 	return (
-		<section className={classes.teams}>
+		<section className={classes.location}>
 			<div className={classes.header}>
 				<Navigation />
 			</div>
-			<Landing images={teamsLandingImages} />
+			<Landing images={images} />
 			<DreamTeam teams={teams} pageTitles={pageTitles} />
 		</section>
 	);
@@ -26,12 +22,13 @@ export default function Teams({ teams, pageTitles, teamsLandingImages }) {
 export async function getStaticProps() {
 	const teams = getAllTeams();
 	const pageTitles = getPageTitles();
-	const teamsLandingImages = getTeamsLandingImages();
+	const images = getLocationLandingImages();
+
 	return {
 		props: {
 			pageTitles,
 			teams,
-			teamsLandingImages,
+			images,
 		},
 	};
 }
