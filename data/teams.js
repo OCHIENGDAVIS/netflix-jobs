@@ -2,7 +2,7 @@ const teams = [
 	{
 		icon: '/images/site/Product.svg',
 		title: 'Products & Technology',
-		subteams: [
+		subItems: [
 			'Business Development',
 			'Client and UI Engineering',
 			'Consumer Insights',
@@ -22,7 +22,7 @@ const teams = [
 	{
 		icon: '/images/site/Content.svg',
 		title: 'Content',
-		subteams: [
+		subItems: [
 			'Content Acquisition',
 			'Content Legal',
 			'Post Production Management',
@@ -36,7 +36,7 @@ const teams = [
 	{
 		icon: '/images/site/corporate.functions.svg',
 		title: 'Content',
-		subteams: [
+		subItems: [
 			'Communications',
 			'Customer Service',
 			'Corporate Real Estate',
@@ -53,7 +53,7 @@ const teams = [
 	{
 		icon: '/images/site/Marketing.svg',
 		title: 'Marketing and Publicity',
-		subteams: [
+		subItems: [
 			'Editorial and Publishing',
 			'Consumer Products',
 			'Creative Marketing',
@@ -66,7 +66,7 @@ const teams = [
 	{
 		icon: '/images/site/Gaming__1_.svg',
 		title: 'Games',
-		subteams: [
+		subItems: [
 			'Night School Studio',
 			'Netflix Games Studio',
 			'Boss Fight Entertainment',

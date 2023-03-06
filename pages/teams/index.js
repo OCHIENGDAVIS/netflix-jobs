@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 
 import Navigation from '@/components/navigation/Navigation';
 import Landing from '@/components/landing/Landing';
-import DreamTeam from '@/components/dream-team/DreaTeam';
+import Main from '@/components/main/Main';
 import {
 	getAllTeams,
 	getPageTitles,
@@ -18,7 +18,7 @@ export default function Teams({ teams, pageTitles, teamsLandingImages }) {
 				<Navigation />
 			</div>
 			<Landing images={teamsLandingImages} />
-			<DreamTeam teams={teams} pageTitles={pageTitles} />
+			<Main items={teams} pageTitles={pageTitles} />
 		</section>
 	);
 }

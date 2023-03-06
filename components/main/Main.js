@@ -1,12 +1,10 @@
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
 
-import TeamList from '../team-list/TeamList';
+import List from '../list/List';
 
-import classes from './DreamTeam.module.css';
+import classes from './Main.module.css';
 
-export default function DreamTeam({ teams, pageTitles }) {
+export default function Main({ items, pageTitles, locations }) {
 	const [title, setTitle] = useState();
 	const [pathname, setPath] = useState();
 	useEffect(() => {
@@ -24,14 +22,11 @@ export default function DreamTeam({ teams, pageTitles }) {
 			}
 		}
 	}, [title, pathname]);
-	console.log(pathname);
-	console.log(title);
-
 	return (
 		<section className={classes.teams}>
 			<div className={classes.container}>
 				<h1>{title}</h1>
-				<TeamList teams={teams} />
+				<List items={items} locations={locations} />
 			</div>
 		</section>
 	);
