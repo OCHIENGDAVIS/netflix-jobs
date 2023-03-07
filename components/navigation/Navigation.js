@@ -1,5 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
-
+import { useState } from 'react';
 import Link from 'next/link';
 
 import classes from './Navigation.module.css';
@@ -23,11 +22,55 @@ export default function Navigation() {
 					<li>
 						<Link href="/location">Location</Link>
 					</li>
-					<li>
-						<Link href="/teams">Emerging Talent</Link>
+					<li className={classes.dropdown}>
+						<button href={`#`} className={classes.drop__container}>
+							<span>Emerging Talent</span>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="3.5"
+								stroke="currentColor"
+								className=""
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+								/>
+							</svg>
+						</button>
+						<div className={classes.options}>
+							<Link href={`#`}>New Grads</Link>
+							<Link href={`#`}>Interns</Link>
+						</div>
 					</li>
-					<li>
-						<Link href="/teams">Wearnetflix</Link>
+					<li className={classes.dropdown}>
+						<button className={classes.drop__container}>
+							<Link href={`#`}>Wearnetflix</Link>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="3.5"
+								stroke="currentColor"
+								className=""
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+								/>
+							</svg>
+						</button>
+						<div className={classes.options}>
+							<Link href={`#`}>NETFLIX CULTURE MEMO</Link>
+							<Link href={`#`}>WORK LIFE PHILOSOPHY</Link>
+							<Link href={`#`}>INCLUSION & DIVERSITY</Link>
+							<Link href={`#`}>VIDEO</Link>
+							<Link href={`#`}>PODCAST</Link>
+							<Link href={`#`}>BLOG</Link>
+						</div>
 					</li>
 				</ul>
 				<div className={classes.search}>
