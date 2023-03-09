@@ -5,6 +5,7 @@ import Freedom from '@/components/freedom/Freedom';
 import StreamingInfo from '@/components/streaming-info/StreamingInfo';
 import Latest from '@/components/latest/Latest';
 import Blog from '@/components/blog/Blog';
+import MobileNav from '@/components/mobile-nav/MobileNav';
 
 import { getAllVideos } from '@/data/videos';
 import { getAllBlogs } from '@/data/blog';
@@ -17,6 +18,7 @@ export default function Home({ videos, blogs }) {
 			<Head>
 				<title>Netflix Jobs | Home </title>
 			</Head>
+
 			<Hero />
 			<Freedom />
 			<StreamingInfo />

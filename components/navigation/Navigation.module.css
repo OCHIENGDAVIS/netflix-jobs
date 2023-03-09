@@ -6,6 +6,19 @@
 	position: relative;
 	height: 4rem;
 }
+.cross {
+	color: var(--color-white);
+	cursor: pointer;
+	display: none;
+	visibility: hidden;
+	opacity: 0;
+}
+.cross svg {
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	fill: var(--color-white);
+}
 .logo {
 	display: flex;
 	align-items: center;
@@ -114,5 +127,15 @@
 @media screen and (max-width: 93.75em) {
 	.header {
 		padding: 2rem 4rem;
+	}
+}
+@media screen and (max-width: 62.1875em) {
+	.cross {
+		display: block;
+		visibility: visible;
+		opacity: 1;
+	}
+	.nav ul {
+		display: none;
 	}
 }
