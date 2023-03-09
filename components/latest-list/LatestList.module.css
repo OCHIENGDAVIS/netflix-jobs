@@ -3,3 +3,26 @@
 	gap: 0.1rem;
 	padding: 0 15rem;
 }
+
+@media screen and (max-width: 72.375em) {
+	.list {
+		padding: 0 6rem;
+	}
+}
+
+@media screen and (max-width: 64.35em) {
+	.list {
+		padding: 2rem;
+	}
+}
+@media screen and (max-width: 62.1875em) {
+	.list {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 40.625em) {
+	.list {
+		flex-direction: column;
+	}
+}

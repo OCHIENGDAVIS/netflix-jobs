@@ -49,3 +49,29 @@
 .action:hover span > svg {
 	padding-left: 0.25rem;
 }
+
+@media screen and (max-width: 72.375em) {
+	.container {
+		padding: 0 6rem;
+	}
+}
+
+@media screen and (max-width: 64.35em) {
+	.container {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 40.625em) {
+	.container {
+		flex-direction: column;
+		gap: 0;
+	}
+	.image {
+		width: 100%;
+		margin-bottom: -9.5px;
+	}
+	.info {
+		width: 100%;
+	}
+}

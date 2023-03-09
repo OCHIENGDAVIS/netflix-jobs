@@ -1,6 +1,5 @@
 .freedom {
 	display: flex;
-	/* gap: 1rem; */
 	margin: 3.5rem 0;
 	padding: 0 12rem;
 	position: relative;
@@ -10,7 +9,7 @@
 	background-color: var(--color-white);
 	min-height: 22rem;
 	padding: 4rem;
-	/* box-shadow: 0 0 40px 5px rgb(0 0 0 / 80%); */
+	position: relative;
 }
 .info h2 {
 	font-weight: 900;
@@ -45,4 +44,46 @@
 .image {
 	background-color: var(--color-white);
 	border-left: 2rem solid var(--color-primary-light-1);
+}
+
+@media screen and (max-width: 93.75em) {
+	.freedom {
+		padding: 0 6rem;
+	}
+}
+
+@media screen and (max-width: 72.375em) {
+	.freedom {
+		padding: 0 2rem;
+	}
+}
+
+@media screen and (max-width: 64.35em) {
+	.freedom {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 62.1875em) {
+	.freedom {
+		flex-direction: column;
+	}
+	.info {
+		padding: 4rem 2rem;
+		min-height: max-content;
+	}
+	.first {
+		order: 2;
+	}
+	.second {
+		order: 1;
+	}
+	.info img {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 40.625em) {
+	.info h2 {
+		font-size: 1.75rem;
+	}
 }

@@ -8,3 +8,14 @@
 	font-weight: 900;
 	font-size: 1.5rem;
 }
+
+@media screen and (max-width: 93.75em) {
+	.latest {
+		padding: 0 2rem;
+	}
+}
+@media screen and (max-width: 62.1875em) {
+	.latest {
+		padding: 0;
+	}
+}

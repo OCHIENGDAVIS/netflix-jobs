@@ -42,3 +42,8 @@
 	height: 1rem;
 	vertical-align: middle;
 }
+@media screen and (max-width: 40.625em) {
+	.item {
+		width: 100%;
+	}
+}

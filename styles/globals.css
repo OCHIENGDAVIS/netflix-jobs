@@ -10,13 +10,17 @@
 /* * COLOR SYSTEM */
 
 :root {
-	--max-width: 1100px;
+	--max-width: 81.25rem;
 	--border-radius: 12px;
 	--color-white: #fff;
 	--color-primary: #e50914;
 	--color-gray: #f5f5f1;
 	--color-gray-1: #696868;
 	--color-dark: #221f1f;
+
+	/* BREAK POINTS */
+	--bp--largest: 93.75em;
+	--bp-larger: 75em;
 }
 
 * {
@@ -27,7 +31,7 @@
 
 html,
 body {
-	max-width: 100vw;
+	/* max-width: 100vw; */
 	overflow-x: hidden;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	background-color: var(--color-gray);
@@ -38,6 +42,10 @@ body {
 
 h1 {
 	font-size: 2.44rem;
+	line-height: 1.75rem;
+}
+h2 {
+	line-height: 1.75;
 }
 
 a {

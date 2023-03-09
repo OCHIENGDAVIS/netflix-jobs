@@ -2,3 +2,13 @@
 	padding: 0 4rem;
 	margin-bottom: 6rem;
 }
+@media screen and (max-width: 93.75em) {
+	.blog {
+		padding: 0 2rem;
+	}
+}
+@media screen and (max-width: 62.1875em) {
+	.blog {
+		padding: 0;
+	}
+}

@@ -27,6 +27,7 @@
 .icons strong {
 	color: var(--color-primary);
 }
+
 .icons span:not(.text) {
 	background-color: var(--color-dark);
 	width: 2rem;
@@ -64,4 +65,48 @@
 .emphasize {
 	color: var(--color-dark);
 	font-weight: 700;
+}
+
+@media screen and (max-width: 62.1875em) {
+	.footer {
+		padding: 2rem 1rem;
+	}
+	.icons > span.text {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 40.625em) {
+	.footer {
+		padding: 2rem 1rem;
+		height: fit-content;
+		flex-direction: column;
+	}
+	.logo {
+		align-self: flex-start;
+		gap: 0.25rem;
+	}
+	.logo h1 {
+		font: 1rem;
+	}
+	.links {
+		display: flex;
+		flex-direction: column;
+		flex: 2;
+	}
+
+	.icons > span.text {
+		display: none;
+	}
+
+	.icons {
+		order: 2;
+		flex: 1;
+	}
+	.nav {
+		order: 1;
+		flex-direction: column;
+		gap: 0.75rem;
+		align-items: flex-end;
+	}
 }
