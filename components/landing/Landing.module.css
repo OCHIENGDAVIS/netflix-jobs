@@ -18,14 +18,14 @@
 	height: 100%;
 }
 
+/* MEDIA QUERIES */
+
 @media screen and (max-width: 82.5em) {
 	.landing {
 		margin-top: 0;
 		padding: 0;
 	}
 }
-
-/* MEDIA QUERIES */
 
 @media screen and (max-width: 62.1875em) {
 	.landing {
@@ -77,6 +77,7 @@
 	.landing__img1 {
 		height: 100%;
 		width: 100%;
+		object-fit: cover;
 		border-right: none;
 	}
 	.landing__img2 {

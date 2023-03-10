@@ -6,3 +6,9 @@
 	width: 100%;
 	height: 17rem;
 }
+
+@media screen and (max-width: 82.5em) {
+	.header {
+		height: fit-content;
+	}
+}
