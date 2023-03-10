@@ -1,5 +1,3 @@
-import { Fragment } from 'react';
-
 import Navigation from '@/components/navigation/Navigation';
 import Landing from '@/components/landing/Landing';
 import Main from '@/components/main/Main';

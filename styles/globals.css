@@ -84,3 +84,9 @@ a:hover {
 .sticky a {
 	color: var(--color-dark);
 }
+
+.overlay {
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+}

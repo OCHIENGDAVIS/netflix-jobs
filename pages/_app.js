@@ -1,9 +1,4 @@
-import { Fragment } from 'react';
-import Head from 'next/head';
-
 import Layout from '@/components/layout/Layout';
-import Hero from '@/components/hero/Hero';
-import Footer from '@/components/footer/Footer';
 
 import '@/styles/globals.css';
 

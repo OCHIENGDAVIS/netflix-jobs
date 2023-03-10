@@ -1,21 +1,31 @@
-import { Fragment, use, useState } from 'react';
+import { Fragment, useState } from 'react';
 import Link from 'next/link';
 import MobileNav from '../mobile-nav/MobileNav';
+
+import Overlay from '../overlay/Overlay';
 
 import classes from './Navigation.module.css';
 
 export default function Navigation() {
 	const [mobileNavOPen, setMobileNavOpen] = useState(false);
+
 	function handleClick() {
 		setMobileNavOpen(true);
 	}
 	function handleClose() {
+		const body = document.querySelector('body');
+		body.classList.remove('overlay');
 		setMobileNavOpen(false);
 	}
 	return (
 		<Fragment>
-			{mobileNavOPen && <MobileNav handleClose={handleClose} />}
-
+			{mobileNavOPen && (
+				<Fragment>
+					{' '}
+					<Overlay handleClose={handleClose} />{' '}
+					<MobileNav handleClose={handleClose} />{' '}
+				</Fragment>
+			)}
 			<header id="header" className={classes.header}>
 				<div className={classes.cross} onClick={handleClick}>
 					<svg
@@ -82,13 +92,16 @@ export default function Navigation() {
 									xmlns="http://www.w3.org/2000/svg"
 									fill="none"
 									viewBox="0 0 24 24"
-									stroke-width="3.5"
+									// stroke-width="3.5"
+									strokeWidth="3.5"
 									stroke="currentColor"
 									className=""
 								>
 									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
+										// stroke-linecap="round"
+										strokeLinecap="round"
+										// stroke-linejoin="round"
+										strokeLinejoin="round"
 										d="M19.5 8.25l-7.5 7.5-7.5-7.5"
 									/>
 								</svg>
