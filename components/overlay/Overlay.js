@@ -6,6 +6,11 @@ export default function Overlay(props) {
 	useEffect(() => {
 		const body = document.querySelector('body');
 		body.classList.add('overlay');
+
+		return () => {
+			const body = document.querySelector('body');
+			body.classList.remove('overlay');
+		};
 	});
 
 	function handleClose() {
