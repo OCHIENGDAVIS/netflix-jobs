@@ -138,6 +138,8 @@
 @media screen and (max-width: 62.1875em) {
 	.header {
 		padding: 2rem;
+		background-color: transparent;
+		z-index: 99;
 	}
 	.cross {
 		display: block;

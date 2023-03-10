@@ -11,7 +11,7 @@ import classes from '@/styles/Teams.module.css';
 
 export default function Teams({ teams, pageTitles, teamsLandingImages }) {
 	return (
-		<section className={classes.teams}>
+		<section>
 			<div className={classes.header}>
 				<Navigation />
 			</div>

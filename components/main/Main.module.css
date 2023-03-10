@@ -13,5 +13,19 @@
 .teams h1 {
 	font-size: 2rem;
 	font-weight: 900;
-	margin-bottom: 6rem;
+	margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 62.1875em) {
+	.teams {
+		padding: 0;
+	}
+	.container {
+		margin-top: 0;
+	}
+	.teams h1 {
+		margin-bottom: 2rem;
+		font-size: 1.75rem;
+		line-height: 1.75;
+	}
 }
